@@ -1,4 +1,4 @@
-# CLI Applications with Python
+# CLI Applications with Python3
 
 Here's how to build your codecheck challenge solution as a CLI application.  
 
