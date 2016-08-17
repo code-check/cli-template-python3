@@ -1,34 +1,40 @@
-# CLI template for Python
+# CLI Applications with Python3
 
-This is template app for CLI test.  
-You can make console application by editing [app/app.py](app/app.py)
+Here's how to build your codecheck challenge solution as a CLI application.  
 
-This uses argparse module.. See detail in [argparse document](https://docs.python.org/2.7/library/argparse.html).
+## Requirements
 
-## How to get input parameters
-app.py has a function `main`
+- Python3 (For the version see our [docs](https://code-check.github.io/docs/en/reference_users/#serverside-language-and-tool-versions) .)
+- The standard library's [`argparse`](https://docs.python.org/3.5/library/argparse.html) module
 
-``` ruby
-def main(args, options):
+## Recieve Inputs
 
-```
-
-All parameters are passed as `args` array
-
-If you want to use option parameter, you can use `parser.add_argument` for your own option in [cli.py](cli.py)
-
-## How to output result
-You can use `print` method
+In [app/app.py](app/app.py) is a function called `main`.
+Build your console application there.  
 
 ``` python
-  print(v)
+def main(args, options):
+  for arg in args:
+    # Replace below line with your code.
+    result = arg
 ```
 
-## How to install external libraries
-If you want to use external libraries, please do following
+All `stdin` input arguments are passed into `args` as an array.  
 
-- Write library name and version in requirements.txt
-- Add following section to codecheck.yml
+If you want to use optional arguments, add them using `argparse`'s `parser.add_argument` in [cli.py](cli.py)
+
+## Output Results
+Use the standard `print()` method to output results to `stdout`.
+
+``` python
+  print(result)
+```
+
+## Install External Libraries
+If you want to use external libraries, do the following:
+
+- Write the library name and version in [requirements.txt](requirements.txt)
+- Add the following to [codecheck.yml](codecheck.yml):
 
 ``` yaml
 build:
