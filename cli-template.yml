@@ -2,9 +2,9 @@
 #   - pip3 install -r requirements.txt
 files:
   - .gitignore
-  - cli.py
-  - app/app.py
-  - app/__init__.py
   - requirements.txt
-main: app/app.py
-command: python3 cli.py
+  - index.py
+  - app/main.py
+  - app/__init__.py
+main: app/main.py
+command: python3 index.py
