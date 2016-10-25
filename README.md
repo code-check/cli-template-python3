@@ -12,7 +12,7 @@ def main(argv):
     # code to run
 ```
 
-`argv` passed here is came from [index.py](index.py), which passes `sys.argv` to main function.
+`argv` passed here is came from [index.py](index.py), which passes `sys.argv` to `main` function. Script name information is excluded in `argv` of main method.
 
 
 ## How to output result
@@ -26,9 +26,3 @@ print(result)
 If you want to use external libraries, do the following:
 
 - Write the library name and version in [requirements.txt](requirements.txt)
-- Add the following to [codecheck.yml](codecheck.yml):
-
-``` yaml
-build:
-  - pip install -r requirements.txt
-```
