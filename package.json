@@ -5,21 +5,12 @@
   "scripts": {
     "test": "codecheck"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/code-check/cli-template-python3.git"
-  },
   "keywords": [
     "codecheck",
     "cli",
     "python"
   ],
-  "author": "Givery Inc.",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/code-check/cli-template-python3/issues"
-  },
-  "homepage": "https://github.com/code-check/cli-template-python3#README.md",
   "devDependencies": {
     "chai": "^3.5.0",
     "codecheck": "^0.5.3"
