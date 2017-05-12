@@ -1,4 +1,9 @@
-import sys
-from app.main import main
+import argparse
+from app.app import main
 
-main(sys.argv[1:])
+parser = argparse.ArgumentParser(description='Write description here')
+parser.add_argument('basic_arguments', nargs='*')
+
+args = parser.parse_args()
+
+main(args.basic_arguments, args)
