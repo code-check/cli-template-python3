@@ -1,5 +1,5 @@
 import argparse
-from app.app import main
+from app.main import main
 
 parser = argparse.ArgumentParser(description='Write description here')
 parser.add_argument('basic_arguments', nargs='*')
