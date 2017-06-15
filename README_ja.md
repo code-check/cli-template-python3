@@ -25,3 +25,8 @@ print(result)
 外部ライブラリを使用する場合は以下の手順で実施してください。
 
 - [requirements.txt](requirements.txt)にライブラリ名とバージョンを記述
+- 例:   
+  ```
+  numpy==1.11.0
+  requests==2.12.4
+  ```
