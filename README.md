@@ -14,7 +14,6 @@ def main(argv):
 
 `argv` passed here is came from [index.py](index.py), which passes `sys.argv` to `main` function. Script name information is excluded in `argv` of main method.
 
-
 ## How to output result
 You can use the standard `print()` method to output results to `stdout`.
 
@@ -26,3 +25,8 @@ print(result)
 If you want to use external libraries, do the following:
 
 - Write the library name and version in [requirements.txt](requirements.txt)
+- Example:   
+  ```
+  numpy==1.11.0
+  requests==2.12.4
+  ```
